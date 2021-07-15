@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#A8A8A8"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#D5D5D5"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="30dp">
+
+                <ImageView
+                    android:id="@+id/imgAccessories"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@drawable/watch" />
+
+                <TextView
+                    android:id="@+id/tvAccessoiries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="80dp"
+                    android:gravity="right"
+                    android:text="ACCESSORIES"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#E8E8E8"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/imgFootware"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@drawable/shoes" />
+
+                <TextView
+                    android:id="@+id/tvFootware"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="80dp"
+                    android:text="FOOTWARE"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#E8E8E8"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/imgClothing"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@drawable/clothes" />
+
+                <TextView
+                    android:id="@+id/tvClothing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="80dp"
+                    android:text="CLOTHING"
+                    android:textColor="#020202"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/tvAccessory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="ACCESSORIES"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#EFEFEF"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp">
+
+                <TextView
+                    android:id="@+id/tvAirbuds2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="130dp"
+                    android:text="14,599/-"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAirbuds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="110dp"
+                    android:text="AIRBUDS"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgRupee"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="132dp"
+                    app:srcCompat="@drawable/rupee" />
+
+                <ImageView
+                    android:id="@+id/imgAirpod"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/airbuds" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#EFEFEF"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp" >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/oneplus_bullets" />
+
+                <TextView
+                    android:id="@+id/tvAirbuds3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="110dp"
+                    android:text="ONE PLUS Bulletz"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAirbuds4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="130dp"
+                    android:text="2,599/-"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgRupee2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="132dp"
+                    app:srcCompat="@drawable/rupee" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#EFEFEF"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/jbl" />
+
+                    <TextView
+                        android:id="@+id/tvAirbuds5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="110dp"
+                        android:text="JBL E55BT"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAirbuds6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="130dp"
+                        android:text="7,899/-"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imgRupee3"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="132dp"
+                        app:srcCompat="@drawable/rupee" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#EFEFEF"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="15dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/fossil" />
+
+                    <TextView
+                        android:id="@+id/tvAirbuds7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="110dp"
+                        android:text="FOSSIL GEN 5"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAirbuds8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="130dp"
+                        android:text="18,999/-"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imgRupee4"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="132dp"
+                        app:srcCompat="@drawable/rupee" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#EFEFEF"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/iwatch" />
+
+                    <TextView
+                        android:id="@+id/tvAirbuds9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="110dp"
+                        android:text="APPLE WATCH SE"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAirbuds10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="130dp"
+                        android:text="27,599/-"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imgRupee5"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="132dp"
+                        app:srcCompat="@drawable/rupee" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#EFEFEF"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="15dp" >
+
+                    <TextView
+                        android:id="@+id/tvAirbuds11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="60dp"
+                        android:text="MORE..."
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
